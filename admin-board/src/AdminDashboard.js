@@ -8,12 +8,12 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     // Fetch registered users
-    axios.get("http://localhost:5000/api/users").then((response) => {
+    axios.get("https://amaranth-lobster-robe.cyclic.app/api/users").then((response) => {
       setUsers(response.data);
     });
 
     // Fetch contact form submissions
-    axios.get("http://localhost:5000/api/contacts").then((response) => {
+    axios.get("https://amaranth-lobster-robe.cyclic.app/api/contacts").then((response) => {
       setContacts(response.data);
     });
   }, []);
